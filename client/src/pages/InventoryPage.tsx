@@ -18,7 +18,7 @@ export function InventoryPage() {
         description="Rewards are more than points. They change your character sheet, your style, and your momentum."
       />
 
-      <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+      <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
         {items.map((item) => (
           <Panel key={item.name} className="text-center">
             <div className="mx-auto grid h-16 w-16 place-items-center rounded-3xl bg-gradient-to-br from-cyan-300 to-violet-500 text-slate-950">

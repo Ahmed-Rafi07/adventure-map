@@ -38,9 +38,9 @@ export function QuizBattlePage() {
             </span>
           </div>
 
-          <div className="rounded-[24px] border border-white/10 bg-slate-950/40 p-5">
+          <div className="rounded-[24px] border border-white/10 bg-slate-950/40 p-4 sm:p-5">
             <p className="text-xs uppercase tracking-[0.3em] text-cyan-200/70">Question 1</p>
-            <h3 className="mt-3 text-2xl font-semibold text-white">What fraction is equal to 0.75?</h3>
+            <h3 className="mt-3 text-xl font-semibold text-white sm:text-2xl">What fraction is equal to 0.75?</h3>
             <div className="mt-5 grid gap-3 sm:grid-cols-2">
               {options.map((option) => {
                 const active = selected === option
@@ -58,11 +58,11 @@ export function QuizBattlePage() {
               })}
             </div>
 
-            <div className="mt-5 flex items-center justify-between gap-4">
+            <div className="mt-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <button
                 type="button"
                 onClick={() => setSubmitted(true)}
-                className="rounded-full bg-white px-5 py-3 text-sm font-semibold text-slate-950 transition hover:scale-[1.02]"
+                className="inline-flex w-full items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-semibold text-slate-950 transition hover:scale-[1.02] sm:w-auto"
               >
                 Attack boss
               </button>

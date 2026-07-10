@@ -39,36 +39,36 @@ export function DashboardPage() {
 
   return (
     <div className="space-y-6">
-      <Panel className="overflow-hidden border-cyan-400/20 bg-[radial-gradient(circle_at_top_right,_rgba(34,211,238,0.18),_transparent_30%),linear-gradient(135deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))] p-6 lg:p-8">
-        <div className="grid gap-8 lg:grid-cols-[1.3fr_0.9fr] lg:items-center">
+      <Panel className="overflow-hidden border-cyan-400/20 bg-[radial-gradient(circle_at_top_right,_rgba(34,211,238,0.18),_transparent_30%),linear-gradient(135deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))] p-5 sm:p-6 lg:p-8">
+        <div className="grid gap-6 lg:grid-cols-[1.3fr_0.9fr] lg:items-center">
           <div>
             <p className="text-xs uppercase tracking-[0.35em] text-cyan-200/70">Adventure map</p>
-            <h1 className="mt-3 max-w-2xl text-4xl font-semibold leading-tight text-white sm:text-5xl">
+            <h1 className="mt-3 max-w-2xl text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
               {data.profile.currentWorld} is waiting. Defeat the next boss and unlock the next realm.
             </h1>
-            <p className="mt-4 max-w-2xl text-base leading-7 text-white/70">
+            <p className="mt-4 max-w-2xl text-sm leading-7 text-white/70 sm:text-base">
               Every session becomes a mission. Every lesson becomes a quest. AI watches your weak
               spots, suggests the next move, and keeps the momentum alive.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <div className="rounded-full border border-white/10 bg-white/6 px-4 py-2 text-sm text-white/75">
+              <div className="rounded-full border border-white/10 bg-white/6 px-3 py-2 text-xs text-white/75 sm:px-4 sm:text-sm">
                 <Zap className="mr-2 inline h-4 w-4 text-amber-300" />
                 Power level {data.profile.powerLevel}
               </div>
-              <div className="rounded-full border border-white/10 bg-white/6 px-4 py-2 text-sm text-white/75">
+              <div className="rounded-full border border-white/10 bg-white/6 px-3 py-2 text-xs text-white/75 sm:px-4 sm:text-sm">
                 <Trophy className="mr-2 inline h-4 w-4 text-cyan-300" />
                 Rank 2 on campus leaderboard
               </div>
-              <div className="rounded-full border border-white/10 bg-white/6 px-4 py-2 text-sm text-white/75">
+              <div className="rounded-full border border-white/10 bg-white/6 px-3 py-2 text-xs text-white/75 sm:px-4 sm:text-sm">
                 <Sparkles className="mr-2 inline h-4 w-4 text-violet-300" />
                 AI mentor online
               </div>
             </div>
           </div>
 
-          <div className="rounded-[28px] border border-white/10 bg-slate-950/50 p-5 shadow-2xl backdrop-blur">
+          <div className="rounded-[28px] border border-white/10 bg-slate-950/50 p-4 shadow-2xl backdrop-blur sm:p-5">
             <p className="text-xs uppercase tracking-[0.3em] text-cyan-200/70">Current mission</p>
-            <div className="mt-4 grid grid-cols-2 gap-4">
+            <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
               <div className="rounded-3xl border border-white/10 bg-white/6 p-4">
                 <p className="text-sm text-white/60">Level</p>
                 <p className="mt-2 text-3xl font-semibold text-white">{data.profile.level}</p>
@@ -103,7 +103,7 @@ export function DashboardPage() {
             title="XP and focus trend"
             description="Momentum spikes show where quests, streaks, and boss fights created the most progress."
           />
-          <div className="h-80">
+          <div className="h-64 sm:h-80">
             <ResponsiveContainer width="100%" height="100%">
               <AreaChart data={data.series}>
                 <defs>

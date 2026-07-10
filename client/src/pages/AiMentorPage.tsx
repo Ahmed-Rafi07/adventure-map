@@ -74,13 +74,13 @@ export function AiMentorPage() {
               {...register('message')}
               rows={5}
               placeholder="Explain fractions with examples and give me 3 practice questions..."
-              className="w-full rounded-[24px] border border-white/10 bg-white/5 px-4 py-4 text-white outline-none transition placeholder:text-white/35 focus:border-cyan-300/40 focus:ring-4 focus:ring-cyan-300/10"
+              className="w-full rounded-[24px] border border-white/10 bg-white/5 px-4 py-4 text-sm leading-6 text-white outline-none transition placeholder:text-white/35 focus:border-cyan-300/40 focus:ring-4 focus:ring-cyan-300/10 sm:text-base"
             />
             <div className="flex flex-wrap gap-3">
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-slate-950 transition hover:scale-[1.02] disabled:opacity-60"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-slate-950 transition hover:scale-[1.02] disabled:opacity-60 sm:w-auto"
               >
                 <Sparkles className="h-4 w-4" />
                 Ask mentor
@@ -88,7 +88,7 @@ export function AiMentorPage() {
               <button
                 type="button"
                 onClick={() => pushToast({ title: 'Prompt copied', message: 'Paste this into the mentor input to generate a study roadmap.', tone: 'default' })}
-                className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/6 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/12"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/10 bg-white/6 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/12 sm:w-auto"
               >
                 <MessageSquarePlus className="h-4 w-4" />
                 Copy prompt

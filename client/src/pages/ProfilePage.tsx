@@ -14,12 +14,12 @@ export function ProfilePage() {
 
       <div className="grid gap-6 xl:grid-cols-[0.95fr_1.05fr]">
         <Panel className="text-center">
-          <div className="mx-auto grid h-24 w-24 place-items-center rounded-[32px] bg-gradient-to-br from-cyan-300 to-violet-500 text-4xl font-semibold text-slate-950 shadow-2xl shadow-cyan-500/20">
+          <div className="mx-auto grid h-20 w-20 place-items-center rounded-[32px] bg-gradient-to-br from-cyan-300 to-violet-500 text-3xl font-semibold text-slate-950 shadow-2xl shadow-cyan-500/20 sm:h-24 sm:w-24 sm:text-4xl">
             {profile.avatar}
           </div>
-          <h3 className="mt-5 text-3xl font-semibold text-white">{profile.name}</h3>
+          <h3 className="mt-5 text-2xl font-semibold text-white sm:text-3xl">{profile.name}</h3>
           <p className="mt-2 text-sm text-white/60">{profile.email}</p>
-          <div className="mt-5 grid grid-cols-2 gap-3 text-left text-sm text-white/75">
+          <div className="mt-5 grid grid-cols-1 gap-3 text-left text-sm text-white/75 sm:grid-cols-2">
             <div className="rounded-[20px] border border-white/10 bg-white/5 p-4">
               <div className="flex items-center gap-2 text-cyan-200"><Sparkles className="h-4 w-4" /> Level</div>
               <p className="mt-2 text-2xl font-semibold text-white">{profile.level}</p>

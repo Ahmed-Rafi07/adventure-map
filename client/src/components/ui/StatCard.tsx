@@ -11,9 +11,9 @@ const toneClasses = {
 
 export function StatCard({ label, value, delta, tone }: StatCardData) {
   return (
-    <article className={cn('rounded-[26px] border bg-gradient-to-br p-5 shadow-xl backdrop-blur-xl', toneClasses[tone])}>
+    <article className={cn('rounded-[26px] border bg-gradient-to-br p-4 shadow-xl backdrop-blur-xl sm:p-5', toneClasses[tone])}>
       <p className="text-xs uppercase tracking-[0.35em] text-white/55">{label}</p>
-      <h4 className="mt-4 text-3xl font-semibold text-white">{value}</h4>
+      <h4 className="mt-4 text-2xl font-semibold text-white sm:text-3xl">{value}</h4>
       <p className="mt-2 text-sm text-white/70">{delta}</p>
     </article>
   )

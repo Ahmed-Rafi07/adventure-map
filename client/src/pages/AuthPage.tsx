@@ -44,17 +44,17 @@ export function AuthPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(34,211,238,0.2),_transparent_35%),linear-gradient(180deg,#020617_0%,#0f172a_100%)] px-4 py-10 text-white sm:px-6 lg:px-8">
-      <div className="mx-auto grid min-h-[calc(100vh-5rem)] max-w-7xl items-center gap-8 lg:grid-cols-[1.15fr_0.85fr]">
+    <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(34,211,238,0.2),_transparent_35%),linear-gradient(180deg,#020617_0%,#0f172a_100%)] px-4 py-8 text-white sm:px-6 sm:py-10 lg:px-8">
+      <div className="mx-auto grid min-h-[calc(100vh-4rem)] max-w-7xl items-center gap-8 lg:grid-cols-[1.15fr_0.85fr]">
         <div className="space-y-6">
           <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-cyan-100/80">
             <Crown className="h-4 w-4" />
             LevelUp AI: turn studying into an RPG adventure
           </div>
-          <h1 className="max-w-3xl text-5xl font-semibold leading-tight sm:text-6xl">
+          <h1 className="max-w-3xl text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
             Every lesson becomes a quest. Every quiz becomes a boss battle.
           </h1>
-          <p className="max-w-2xl text-lg leading-8 text-white/70">
+          <p className="max-w-2xl text-base leading-8 text-white/70 sm:text-lg">
             Sign in to continue your campaign, restore progress, and ask the AI mentor to guide your next move.
           </p>
           <div className="flex flex-wrap gap-3 text-sm text-white/75">
@@ -66,7 +66,7 @@ export function AuthPage() {
           </div>
         </div>
 
-        <div className="rounded-[34px] border border-white/10 bg-white/8 p-6 shadow-[0_30px_100px_rgba(0,0,0,0.45)] backdrop-blur-xl">
+        <div className="rounded-[34px] border border-white/10 bg-white/8 p-5 shadow-[0_30px_100px_rgba(0,0,0,0.45)] backdrop-blur-xl sm:p-6">
           <div className="mb-6 flex items-center gap-3">
             <div className="grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br from-cyan-300 to-violet-500 text-slate-950">
               <Sparkles className="h-7 w-7" />
